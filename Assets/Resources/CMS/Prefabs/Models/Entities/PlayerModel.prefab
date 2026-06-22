@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5240591970895977972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2799452770657757655}
+  - component: {fileID: -8154726736880890739}
+  m_Layer: 0
+  m_Name: PlayerModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2799452770657757655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5240591970895977972}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8154726736880890739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5240591970895977972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1729a46f79086449a991b5512530e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CMS::CMSEntityPfb
+  idCMS: CMS/Prefabs/Models/Entities/PlayerModel
+  Components:
+  - rid: 106480307888456138
+  - rid: 106480307888456140
+  - rid: 106480307888456142
+  - rid: 106480307888456143
+  - rid: 106480307888456141
+  - rid: 106480307888456144
+  - rid: 106480307888456145
+  references:
+    version: 2
+    RefIds:
+    - rid: 106480307888456138
+      type: {class: TagSpeed, ns: , asm: Assembly-CSharp}
+      data:
+        Speed: 5
+    - rid: 106480307888456140
+      type: {class: TagJump, ns: , asm: Assembly-CSharp}
+      data:
+        Power: 8
+    - rid: 106480307888456141
+      type: {class: TagDash, ns: , asm: Assembly-CSharp}
+      data:
+        Length: 6
+        Speed: 8
+        Cost: 50
+        PowerOfBounce: 1
+    - rid: 106480307888456142
+      type: {class: TagTimeSlow, ns: , asm: Assembly-CSharp}
+      data:
+        factor: 0.3
+    - rid: 106480307888456143
+      type: {class: TagStamina, ns: , asm: Assembly-CSharp}
+      data:
+        IsEndless: 0
+        MaxValue: 100
+        RegenRate: 10
+    - rid: 106480307888456144
+      type: {class: TagHealth, ns: , asm: Assembly-CSharp}
+      data:
+        IsEndless: 0
+        MaxHealth: 3
+    - rid: 106480307888456145
+      type: {class: TagWeapon, ns: , asm: Assembly-CSharp}
+      data:
+        Weapon: {fileID: -2707159767269811221, guid: 4e64aab59ce23384ab46afc4eb4b25e8, type: 3}

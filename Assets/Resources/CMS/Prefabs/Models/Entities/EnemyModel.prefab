@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &152326849219061380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2415681348094112830}
+  - component: {fileID: -3896695881131626649}
+  m_Layer: 0
+  m_Name: EnemyModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2415681348094112830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152326849219061380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3896695881131626649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152326849219061380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1729a46f79086449a991b5512530e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CMS::CMSEntityPfb
+  idCMS: CMS/Prefabs/Models/Entities/EnemyModel
+  Components:
+  - rid: 106480530962251851
+  - rid: 106480530962251852
+  - rid: 106480530962251853
+  - rid: 106480530962251854
+  references:
+    version: 2
+    RefIds:
+    - rid: 106480530962251851
+      type: {class: TagSprite, ns: Runtime, asm: CMS}
+      data:
+        sprite: {fileID: -7282886668606283007, guid: 2ed7ab32b542f544e879965945e793b0, type: 3}
+    - rid: 106480530962251852
+      type: {class: TagHealth, ns: , asm: Assembly-CSharp}
+      data:
+        IsEndless: 0
+        MaxHealth: 5
+    - rid: 106480530962251853
+      type: {class: TagSpeed, ns: , asm: Assembly-CSharp}
+      data:
+        Speed: 2
+    - rid: 106480530962251854
+      type: {class: TagWeapon, ns: , asm: Assembly-CSharp}
+      data:
+        Weapon: {fileID: 337861014244089008, guid: d82509f27b09c6a4794ca408fecc799c, type: 3}
